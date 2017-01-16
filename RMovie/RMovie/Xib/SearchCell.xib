@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="SearchCell" reuseIdentifier="SearchCell" id="Oo3-1I-cth" customClass="SearchCell" customModule="RMovie">
+            <rect key="frame" x="0.0" y="0.0" width="268" height="480"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="268" height="480"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="lfP-ci-ymf">
+                        <rect key="frame" x="14" y="446.5" width="240" height="31.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6iR-uh-Nkh">
+                        <rect key="frame" x="-14" y="0.0" width="296" height="444.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tfz-Ki-rTd">
+                                <rect key="frame" x="10" y="10" width="276" height="424.5"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="score-Circle.png" translatesAutoresizingMaskIntoConstraints="NO" id="lT8-vc-wpZ">
+                                <rect key="frame" x="237" y="16" width="43" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="lT8-vc-wpZ" secondAttribute="height" multiplier="1:1" id="dCt-cU-13F"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6.6" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="hqc-g4-w9g">
+                                <rect key="frame" x="241" y="22.5" width="34.5" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="hqc-g4-w9g" secondAttribute="height" multiplier="8:7" id="n0Y-Kf-Vo1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="6iR-uh-Nkh" secondAttribute="height" multiplier="2:3" id="1ZP-yC-5DQ"/>
+                            <constraint firstItem="tfz-Ki-rTd" firstAttribute="centerY" secondItem="6iR-uh-Nkh" secondAttribute="centerY" id="3KE-EX-ZYe"/>
+                            <constraint firstAttribute="trailing" secondItem="tfz-Ki-rTd" secondAttribute="trailing" constant="10" id="3QL-rd-fO4"/>
+                            <constraint firstItem="tfz-Ki-rTd" firstAttribute="top" secondItem="6iR-uh-Nkh" secondAttribute="top" constant="10" id="46G-wJ-xKf"/>
+                            <constraint firstItem="lT8-vc-wpZ" firstAttribute="top" secondItem="6iR-uh-Nkh" secondAttribute="top" constant="16" id="4Q4-eI-5Fw"/>
+                            <constraint firstItem="hqc-g4-w9g" firstAttribute="centerY" secondItem="lT8-vc-wpZ" secondAttribute="centerY" id="7Bv-BR-U77"/>
+                            <constraint firstItem="hqc-g4-w9g" firstAttribute="centerX" secondItem="lT8-vc-wpZ" secondAttribute="centerX" id="Nbl-4k-PyH"/>
+                            <constraint firstAttribute="trailing" secondItem="lT8-vc-wpZ" secondAttribute="trailing" constant="16" id="QUc-t2-UNn"/>
+                            <constraint firstItem="hqc-g4-w9g" firstAttribute="height" secondItem="lT8-vc-wpZ" secondAttribute="height" multiplier="25:36" id="aaR-3O-M20"/>
+                            <constraint firstAttribute="bottom" secondItem="tfz-Ki-rTd" secondAttribute="bottom" constant="10" id="ocu-8E-by1"/>
+                            <constraint firstItem="tfz-Ki-rTd" firstAttribute="leading" secondItem="6iR-uh-Nkh" secondAttribute="leading" constant="10" id="v69-3d-Mh2"/>
+                            <constraint firstItem="tfz-Ki-rTd" firstAttribute="centerX" secondItem="6iR-uh-Nkh" secondAttribute="centerX" id="xXR-yR-haB"/>
+                            <constraint firstItem="lT8-vc-wpZ" firstAttribute="height" secondItem="tfz-Ki-rTd" secondAttribute="height" multiplier="1:10" constant="1" id="yqJ-XO-IZ5"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="lfP-ci-ymf" firstAttribute="leading" secondItem="Oo3-1I-cth" secondAttribute="leading" constant="14" id="05w-5a-TP5"/>
+                <constraint firstItem="6iR-uh-Nkh" firstAttribute="top" secondItem="Oo3-1I-cth" secondAttribute="top" id="4vy-ha-lFD"/>
+                <constraint firstItem="lfP-ci-ymf" firstAttribute="centerX" secondItem="6iR-uh-Nkh" secondAttribute="centerX" id="63v-Ps-2zG"/>
+                <constraint firstAttribute="trailing" secondItem="lfP-ci-ymf" secondAttribute="trailing" constant="14" id="KuB-pk-91J"/>
+                <constraint firstAttribute="bottom" secondItem="lfP-ci-ymf" secondAttribute="bottom" constant="2" id="OiI-GQ-ZEF"/>
+                <constraint firstItem="lfP-ci-ymf" firstAttribute="top" secondItem="6iR-uh-Nkh" secondAttribute="bottom" constant="2" id="bJf-1O-ZGd"/>
+                <constraint firstAttribute="bottom" secondItem="6iR-uh-Nkh" secondAttribute="bottom" constant="35.5" id="mFW-9p-eVv"/>
+            </constraints>
+            <size key="customSize" width="268" height="480"/>
+            <connections>
+                <outlet property="circle" destination="lT8-vc-wpZ" id="Kra-9s-gDO"/>
+                <outlet property="imageContainer" destination="6iR-uh-Nkh" id="gcZ-OS-0a3"/>
+                <outlet property="labelName" destination="lfP-ci-ymf" id="Apn-cz-nvj"/>
+                <outlet property="movieScore" destination="hqc-g4-w9g" id="Us7-Ng-eUE"/>
+                <outlet property="poster" destination="tfz-Ki-rTd" id="IV3-V3-IER"/>
+            </connections>
+            <point key="canvasLocation" x="53" y="-111"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="score-Circle.png" width="58" height="58"/>
+    </resources>
+</document>

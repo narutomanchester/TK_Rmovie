@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="MovieReviewView" id="iN0-l3-epB" customClass="MovieReviewView" customModule="RMovie">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="335"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="v9X-tY-LAL">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="335"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="v9X-tY-LAL" secondAttribute="bottom" id="4Mu-5I-CkC"/>
+                <constraint firstItem="v9X-tY-LAL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="KV7-EK-NSo"/>
+                <constraint firstAttribute="trailing" secondItem="v9X-tY-LAL" secondAttribute="trailing" id="YZY-99-3DJ"/>
+                <constraint firstItem="v9X-tY-LAL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="f1f-He-QSe"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="reviewTable" destination="v9X-tY-LAL" id="e5Q-tA-aYc"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="-187.5"/>
+        </view>
+    </objects>
+</document>

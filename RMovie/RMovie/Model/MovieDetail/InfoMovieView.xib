@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="InfoMovieView" id="iN0-l3-epB" customClass="InfoMovieView" customModule="RMovie" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="349" height="333"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genres" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zli-5G-dKp">
+                    <rect key="frame" x="0.0" y="103.5" width="41" height="16"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="13"/>
+                    <color key="textColor" red="0.47843137254901957" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Casts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Awl-F0-OLh">
+                    <rect key="frame" x="0.0" y="169.5" width="33" height="16"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="13"/>
+                    <color key="textColor" red="0.47843137250000001" green="0.46666666670000001" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="hcD-SD-f59">
+                    <rect key="frame" x="0.0" y="121.5" width="349" height="46"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="V1v-XQ-g2p">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="CUp-Fb-PuZ">
+                    <rect key="frame" x="0.0" y="187.5" width="349" height="140.5"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="A5R-ve-4O4">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HaV-Oa-chM">
+                    <rect key="frame" x="0.0" y="0.0" width="64" height="16"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="13"/>
+                    <color key="textColor" red="0.47843137250000001" green="0.46666666670000001" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gKz-O7-msP">
+                    <rect key="frame" x="0.0" y="18" width="349" height="83.5"/>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="HaV-Oa-chM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="1zc-wX-OqP"/>
+                <constraint firstAttribute="trailing" secondItem="gKz-O7-msP" secondAttribute="trailing" id="2Ec-zN-E5z"/>
+                <constraint firstItem="gKz-O7-msP" firstAttribute="top" secondItem="HaV-Oa-chM" secondAttribute="bottom" constant="2" id="C0b-gc-bHl"/>
+                <constraint firstItem="Awl-F0-OLh" firstAttribute="top" secondItem="hcD-SD-f59" secondAttribute="bottom" constant="2" id="FlV-0R-HwA"/>
+                <constraint firstItem="hcD-SD-f59" firstAttribute="top" secondItem="zli-5G-dKp" secondAttribute="bottom" constant="2" id="I1L-Qe-iuh"/>
+                <constraint firstItem="CUp-Fb-PuZ" firstAttribute="top" secondItem="Awl-F0-OLh" secondAttribute="bottom" constant="2" id="JqT-DN-esu"/>
+                <constraint firstAttribute="trailing" secondItem="CUp-Fb-PuZ" secondAttribute="trailing" id="Mwy-sX-euk"/>
+                <constraint firstItem="gKz-O7-msP" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="1:4" id="U18-mZ-Y9A"/>
+                <constraint firstAttribute="bottom" secondItem="CUp-Fb-PuZ" secondAttribute="bottom" constant="5" id="UgE-8n-pDf"/>
+                <constraint firstItem="CUp-Fb-PuZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ecm-Oz-gKE"/>
+                <constraint firstItem="gKz-O7-msP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ftQ-wP-Ceq"/>
+                <constraint firstItem="Awl-F0-OLh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="pBz-Qr-NuA"/>
+                <constraint firstItem="HaV-Oa-chM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="q5k-mc-ejb"/>
+                <constraint firstItem="hcD-SD-f59" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="45:330" id="rMb-Ba-vm6"/>
+                <constraint firstItem="zli-5G-dKp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="vXy-9t-X8q"/>
+                <constraint firstItem="zli-5G-dKp" firstAttribute="top" secondItem="gKz-O7-msP" secondAttribute="bottom" constant="2" id="yO9-SP-Njh"/>
+                <constraint firstAttribute="trailing" secondItem="hcD-SD-f59" secondAttribute="trailing" id="z6A-s6-1oY"/>
+                <constraint firstItem="hcD-SD-f59" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="zUx-ES-Ywu"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="castCollection" destination="CUp-Fb-PuZ" id="19Y-BQ-dVD"/>
+                <outlet property="desciptionText" destination="gKz-O7-msP" id="OVP-KM-Ncd"/>
+                <outlet property="genreColletion" destination="hcD-SD-f59" id="d7f-fe-xHW"/>
+            </connections>
+            <point key="canvasLocation" x="-83.5" y="-99.5"/>
+        </view>
+    </objects>
+</document>

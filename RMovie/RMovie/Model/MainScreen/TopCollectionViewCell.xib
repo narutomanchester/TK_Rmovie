@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="TopCollectionViewCell" reuseIdentifier="TopCollectionViewCell" id="gTV-IL-0wX" customClass="TopCollectionViewCell" customModule="RMovie" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="229" height="314"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="229" height="314"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jvd-If-xpa">
+                        <rect key="frame" x="20" y="0.0" width="189" height="284"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="jvd-If-xpa" secondAttribute="height" multiplier="2:3" id="27h-Np-etc"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="B80-v8-b3Q">
+                        <rect key="frame" x="0.0" y="288" width="228" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.99509865045547485" green="0.9930608868598938" blue="0.99595731496810913" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="jvd-If-xpa" secondAttribute="bottom" constant="30" id="QxQ-g0-1cI"/>
+                <constraint firstItem="B80-v8-b3Q" firstAttribute="top" secondItem="jvd-If-xpa" secondAttribute="bottom" constant="4" id="ROm-mx-8Mz"/>
+                <constraint firstAttribute="trailing" secondItem="B80-v8-b3Q" secondAttribute="trailing" constant="1" id="RuX-uf-tkr"/>
+                <constraint firstItem="B80-v8-b3Q" firstAttribute="centerX" secondItem="jvd-If-xpa" secondAttribute="centerX" id="SI4-7A-KZZ"/>
+                <constraint firstAttribute="bottom" secondItem="B80-v8-b3Q" secondAttribute="bottom" constant="5" id="dCS-eA-xk2"/>
+                <constraint firstItem="B80-v8-b3Q" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="gBL-el-W3t"/>
+                <constraint firstItem="jvd-If-xpa" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="kuO-OV-6cE"/>
+                <constraint firstItem="jvd-If-xpa" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="tOm-WZ-J77"/>
+            </constraints>
+            <size key="customSize" width="229" height="314"/>
+            <connections>
+                <outlet property="name" destination="B80-v8-b3Q" id="7t5-gj-pw8"/>
+                <outlet property="posterImage" destination="jvd-If-xpa" id="Z1Q-RE-yYq"/>
+            </connections>
+            <point key="canvasLocation" x="112.5" y="101"/>
+        </collectionViewCell>
+    </objects>
+</document>
