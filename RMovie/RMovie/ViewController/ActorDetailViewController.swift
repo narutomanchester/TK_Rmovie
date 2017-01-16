@@ -44,7 +44,6 @@ class ActorDetailViewController: UIViewController, UIGestureRecognizerDelegate {
             self.aImage.frame = self.aImage.frame
         }
         
-        self.addTapGesture()
         
         SearchManager.share.searchActorDetailMovie(id: actor.id) { (movies) in
             let movieCollectionView = Bundle.main.loadNibNamed("ReferenceMovieCollection", owner: self, options: nil)?.first as? ReferenceMovieCollection
@@ -61,34 +60,6 @@ class ActorDetailViewController: UIViewController, UIGestureRecognizerDelegate {
         // Do any additional setup after loading the view.
     }
     
-    func addTapGesture() {
-        let tap = UITapGestureRecognizer(target: self, action: #selector(handleTap))
-        tap.delegate = self
-        self.aImage.isUserInteractionEnabled = true
-        self.aImage.addGestureRecognizer(tap)
-    }
-    
-    func handleTap() {
-        print("tap image")
-        if animationState == 0 {
-            print(self.imageFrameBig)
-            self.view.bringSubview(toFront: self.aImage)
-            UIView.animate(withDuration: 0.6, animations: {
-                self.aImage.frame = self.imageFrameBig
-                }, completion: { (_) in
-                    self.animationState = 1
-            })
-        }
-        else    {
-            print(self.imageFrameSmall)
-            UIView.animate(withDuration: 0.6, animations: {
-                self.aImage.frame = self.imageFrameSmall
-                }, completion: { (_) in
-                    self.animationState = 0
-            })
-            
-        }
-    }
     func setUI() {
         self.title = "Actor Screen"
         self.aBiography.isEditable = false
